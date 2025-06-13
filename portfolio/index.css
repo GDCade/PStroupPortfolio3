@@ -1,0 +1,215 @@
+body {
+    background-color: rgb(0, 0, 0);
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+.sidebar {
+    background-color: #00000000;
+    padding-top: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+}
+
+/*content on desktop and higher */
+@media (min-width: 768px) {
+    .sidebar {
+        height: 100vh;
+        position: fixed;
+        padding-top: 100px;
+        padding-left: 30px;
+    }
+    
+    .main-content {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+
+/*content on mobile and small windows*/
+@media (max-width: 767px) {
+    .offset-md-2 {
+        margin-left: 0;
+    }
+    
+    .project-card .row {
+        flex-direction: column;
+    }
+    
+    .project-card .col-md-3 div {
+        width: 100% !important;
+        height: 150px !important;
+        margin-bottom: 20px;
+    }
+    
+    .project-card .col-md-9 {
+        padding: 0;
+    }
+    
+    .sidebar {
+        height: auto;
+        position: relative;
+        padding-bottom: 20px;
+    }
+    
+    .main-content {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .logo img{
+        margin-bottom: 20px;
+        display: inline;
+        max-width: 20% !important;
+    }
+    
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .nav-link {
+        margin: 0 10px;
+    }
+}
+
+.logo {
+    margin-bottom: 20px;
+}
+.logo img {
+}
+
+.nav-link {
+    color: #ffffff;
+    font-weight: 500;
+    padding: 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.nav-link.active {
+    border-bottom: 2px solid #333;
+    width: fit-content;
+    margin: 0 auto 5px auto;
+}
+
+/* About page*/
+.about-card {
+    background-color: rgb(0, 0, 0);
+    border-radius: 0;
+    margin-bottom: 0;
+    padding: 0px;
+    border: 1px solid #000;
+    width: 100%;
+}
+
+.about-1-title {
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-family: Verdana;
+}
+
+.about-1-desc {
+    color: #ffffff;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-family: Verdana;
+}
+
+.about-2-card {
+    background-color: white;
+    border-radius: 0;
+    margin-bottom: 0;
+    padding: 200px;
+    border: 1px solid #000;
+    width: 100%;
+}
+
+.about-2-title {
+    color: #000000;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.about-2-desc {
+    color: #444;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-family: Verdana;
+}
+
+/*portfolio specific*/
+.project-card {
+    background-color: white;
+    border-radius: 0;
+    margin-bottom: 0;
+    padding: 55px;
+    border: 1px solid #000;
+    width: 100%;
+    font-family: Verdana;
+}
+.project-image {
+    width: 100%;
+    max-width: 250px;
+    padding: 2px;
+    height: auto;
+    font-family: Verdana;
+}
+.project-title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-family: Verdana;
+}
+.project-description {
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-family: Verdana;
+}
+.read-more {
+    color: #ff6347;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: Verdana;
+}
+.read-more:hover {
+    text-decoration: underline;
+}
+.container {
+    padding: 0;
+}
+.main-content {
+    padding-top: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/*background video things */
+#bgvid, #bgvid_preload, #bgoverlay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    opacity: 0.3;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+}
+
+#bgoverlay {
+	
+	margin-left:-1px;
+	background-size:auto;
+}
